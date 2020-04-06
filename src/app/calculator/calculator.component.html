@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="addendA">Operando A</label>
+      <input
+        id="addendA"
+        type="number"
+        class="form-control"
+        [(ngModel)]="addendA">
+      <label for="addendB">Operando B</label>
+      <input
+        id="addendB"
+        type="number"
+        class="form-control"
+        [(ngModel)]="addendB">
+      <button class="btn btn-primary" [disabled]="addendA === null || addendB == null"  (click)="add()">Sumar</button>
+      <p>Resultado: {{result}}</p>
+    </div>
+  </div>
+</div>

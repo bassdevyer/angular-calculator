@@ -12,7 +12,7 @@ export class CalculatorComponent {
   result;
 
 
-  add() {
+  add(): void {
     this.result = this.addendA + this.addendB;
   }
 }

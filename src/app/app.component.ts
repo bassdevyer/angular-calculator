@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Sum} from './sum.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aplicación de Calculadora';
+
+  result: number;
+
+  onAdd(result: number) {
+    this.result = result;
+  }
 }

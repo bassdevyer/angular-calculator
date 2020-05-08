@@ -1,0 +1,28 @@
+<form>
+  <div class="form-group">
+    <label for="addendA">Operando A</label>
+    <input
+      id="addendA"
+      type="number"
+      class="form-control"
+      placeholder="Escribe operando A"
+      [(ngModel)]="addend1Input"
+      name="addendA">
+  </div>
+  <div class="form-group">
+    <label for="addendB">Operando B</label>
+    <input
+      id="addendB"
+      type="number"
+      class="form-control"
+      [(ngModel)]="addend2Input"
+      name="addendB"
+      placeholder="Escribe operando B">
+    <button class="btn btn-primary"
+            type="submit"
+            [disabled]="addend1Input === null || addend2Input == null"
+            (click)="onAdd()">
+      Sumar
+    </button>
+  </div>
+</form>
